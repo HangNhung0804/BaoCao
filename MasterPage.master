@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+
+<%@ Register Src="~/UC/ucLeft.ascx" TagPrefix="uc2" TagName="ucLeft" %>
+<%@ Register Src="~/UC/ucHeader.ascx" TagPrefix="uc2" TagName="ucHeader" %>
+<%@ Register Src="~/UC/ucRight.ascx" TagPrefix="uc2" TagName="ucRight" %>
+<%@ Register Src="~/UC/ucFooter.ascx" TagPrefix="uc2" TagName="ucFooter" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Hoa Tươi A Sỏi</title>
+    <link href="Scripts/CSS/Master.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form_body" runat="server">
+        
+        <uc2:ucHeader runat="server" ID="ucHeader" />
+       <div id="body">
+           <asp:ContentPlaceHolder ID="slider" runat="server">
+
+           </asp:ContentPlaceHolder>
+           
+            <article>
+                <uc2:ucLeft runat="server" id="ucLeft" />  
+               <section>
+                  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                  </asp:ContentPlaceHolder>   
+              </section>
+                <uc2:ucRight runat="server" ID="ucRight" />
+        </article>
+      </div>
+       <uc2:ucFooter runat="server" id="ucFooter" />
+    </form>
+</body>
+</html>

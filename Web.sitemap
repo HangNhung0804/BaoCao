@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Nút gốc">
+    <siteMapNode url="Default.aspx" title="Trang chủ"  description="Trang chủ"/>
+    <siteMapNode url="Gioithieu.html" title="Giới thiệu" />
+    <siteMapNode title="Đăng ký">
+      <siteMapNode url="Dangkythanhvien.aspx" title="Đăng ký"  description="Đăng ký" />
+      <siteMapNode url="Dangnhap.aspx" title="Đăng nhập"  description="Chức năng đăng nhập" />
+      <siteMapNode url="Doimatkhau.aspx" title="Đổi mật khẩu"  description="Chức năng đổi mật khẩu" />
+    </siteMapNode>
+    <siteMapNode title="Khách hàng">
+      <siteMapNode url="Giohang.aspx" title="Giỏ hàng"  description="Chức năng xem giỏ hàng" />
+      <siteMapNode url="Thanhtoan.aspx" title="Thanh toán"  description="Chức năng thanh toán" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
